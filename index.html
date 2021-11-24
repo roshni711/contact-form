@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  
+    <title>
+            Resturant
+        </title>
+          
+        <!-- add icon link -->
+        <link rel = "icon" href = "img/resturant.png" 
+        type = "image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="form.css">
+    
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+   
+    
+   
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/animate.css/animate.css">
+    
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/css/style.default.css" id="theme-stylesheet">
+    
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/css/custom.css">
+    
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   </head>
+    
+   
+		<style>
+		.res-circle{
+border-radius:100px; 
+background-color:white; 
+width:50px;
+ height:50px;
+ float:left;
+
+}
+.circle-txt{
+margin-left:10px; 
+padding-top:8px
+}
+.circle-txt span{
+font-size:30px;
+ font-weight:bold;color:orange
+}
+.pp{
+margin-left:70px;
+color:white
+}
+.pp{color:white}
+.logo img{height:100px;}
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#FDEDEC ;
+  font-size:50px;
+  font-weight:bold;
+  
+ 
+}
+.centered p{ font-color:white;}
+.transaction{margin-left:25%; margin-right:25%}
+.setting{margin-left:25%; margin-right:25%}
+.button5:hover {
+  background-color:orange;
+  color:black;}
+
+@media screen and (max-width: 600px) {
+.logo img{height:50px;}
+.intro-section .centered .big{ font-size:30px;}
+.intro-section .centered .little{ font-size:20px;}
+.logo p{
+margin-left:0px;
+}
+.navbar button{margin-left:0px;}
+.transaction{margin-left:10px; margin-right:10px}
+.setting{margin-left:10px; margin-right:10px}
+}
+.card{
+height:250px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    text-align: center;
+	border-style:none;
+	margin:5px 5px 5px 5px;
+}
+.card .text{
+margin-top:50px;
+margin-left:5px;
+margin-right:5px;
+}
+.text h5{
+color:	#808080;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid 	#A9A9A9!important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+ 
+  
+ 
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: 		#D3D3D3!important;
+}
+		</style>
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top bg-dark text-white">
+        <div class="container"><div class="logo"><img src="img/logo2.png" alt="abc" />
+		<a href="#intro" class="navbar-brand scrollTo "><p class="text-warning">HD INITIAL PVT. LTD</p></a></div>
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" style="color:white"><span class="fa fa-bars"></span></button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto text-white">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll text-white">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll text-white">About</a></li>
+			  <li class="nav-item"><a href="#contact" class="nav-link link-scroll text-white">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/cover2.jpg) center center no-repeat; background-size: cover;background-image:;
+height:100%;
+height: 400px;
+  width: 100%;
+  margin:;
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;	" class="intro-section pb-2">
+      <div class="container text-center centered">
+        <p data-animate="fadeInDown" class="text-shadow mb-5 big"><font color="white">Ires Restaurant & Bar (POS) Software</font></p>
+        <p data-animate="slideInUp" class="h3 text-shadow text-400 little">Grow Your Business With Us.</p>
+      </div>
+    </section>
+
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About </h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-6">
+           <p><font color="orange">We are restaurant management system</font>  with differce.
+“IRES Restaurant Management System” is a Software application. 
+This system is developed to automate day to day activity of a restaurant. 
+Restaurant is a kind of business that serves people all over world with ready-made food. 
+This system is developed to provide service facility to restaurant to make employess task easy.
+ This restaurant management system can be used by employees in a restaurant to handle the clients, 
+ their orders and can help them easily find free tables or place orders.Online Restaurant management system is the system for managing the restaurant business.  
+ The main point of developing this system is to help restaurant administrator manage the restaurant business and help customer .
+Administrator or manager is the person who will manage the entire system. he can edit the menu information such as its price, items available currently, etc. </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-6">
+           <img src="img/a1.png" style="width:100%;height:80%"/>
+          </div>
+		  
+          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/a2.jpg" alt="" class="image rounded-circle img-fluid"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Service-->
+    <section id="services" class="bg-dark services-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title text-warning">Dashboard</h2>
+        </header>
+        <div class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <img src="img/2.png" alt="abc" style="height:300px;"  />
+            <h3 class="heading mb-3 text-400 text-warning">Take Away</h3>
+            <p class="text-left description text-white">You can purchase food at restaurant or fast food outlet with the intention to eat elsewhere.</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+             <img src="img/1.png" alt="abc" style="height:300px;"  />
+            <h3 class="heading mb-3 text-400 text-warning">Home Delivery</h3>
+            <p class="text-left description text-white">You get both through your own order platform and online food aggregators like Foodpanda, Swiggy, Zomato. All the important updates regarding orders and status notifications will now appear on your dashboard,
+	easing your management process.</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4 text-center " >
+           <img class="pl-0" src="img/din2-removebg-preview.png" alt="abc" style="height:300px;width:300px;margin-left:-80px"  /> 
+            <h3 class="heading mb-3 text-400 text-warning">Dining</h3>
+            <p class="text-left description text-white">Contactless ordering for multi course dining</p>
+          </div>
+        </div>
+        <hr data-animate="fadeInUp">
+        <div data-animate="fadeInUp" class="text-center">
+          <p class="lead text-white">Would you like to know more or just discuss something?</p>
+          <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact us</a></p>
+        </div>
+      </div>
+    </section> 
+	
+	    <!-- Testimonials-->
+  
+         
+       
+        	<section id="cards" style="background-color:#F8F8F8;">
+	<div class="container" style=" margin-top:100px;margin-bottom:50px">
+	        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">Project Modules </h2>
+        </header>
+		<h2 style="text-align:center;margin-top:50px;" data-animate="fadeInDown">1. Master</h2>
+	      <div class="wrapper mt-5">
+         <div class="carousel owl-carousel" data-animate="fadeInUp">
+            <div class="card card-1">
+                  
+            <div class="testimonial" >
+              <div class="text">
+			  <h5 style="">Restaurant Master</h5>
+                <p class="mt-5">Manage/Add restaurant tasks from any destinatons</p>
+              </div>
+          
+            </div>
+          
+            </div>
+            <div class="card card-2">
+             
+            <div class="testimonial">
+              <div class="text">
+			  <h5>Branch Master</h5>
+                <p class="mt-5"> Manage restaurant branches from single desktop tables </p>
+              </div>
+             
+            </div>
+          
+            </div>
+            <div class="card card-3">
+                 
+            <div class="testimonial">
+              <div class="text">
+               <h5>Table Master</h5>
+                <p class="mt-5">Arrange tables for any branch of restaurant by just selecting branch name, table name</p>
+              </div>
+            </div>
+         
+            </div>
+            <div class="card card-4">
+              
+            <div class="testimonial">
+              <div class="text">
+                <h5>Category Master</h5>
+                <p class="mt-5">Add category of items or etc.</p>
+              </div>
+            </div>
+            </div>
+			
+			
+			
+			
+            <div class="card card-5">
+                
+            <div class="testimonial">
+              <div class="text">
+                 <h5>Delivery Boy Master</h5>
+                <p class="mt-5">Add details of delivery boy for example name, contact no etc. from which root boy delivering items</p>
+              </div>
+            </div>
+            </div>
+			
+			
+			<div class="card card-5">
+            <div class="testimonial">
+              <div class="text">
+                 <h5>Purchase Master</h5>
+                <p class="mt-5">Here add details of purchased goods, tems name, price quantity, date, vendor name</p>
+              </div>
+            </div>
+            </div>
+			
+			
+			<div class="card card-5">
+            <div class="testimonial">
+              <div class="text">
+                 <h5>Unit Master</h5>
+                <p class="mt-5">Add units in kg, ltr,grm,ml etc</p>
+              </div>
+            </div>
+            </div>
+			
+			
+			<div class="card card-5">
+            <div class="testimonial">
+              <div class="text">
+                 <h5>Raw Materials Master</h5>
+                <p class="mt-5">Keep record of raw materials and items </p>
+              </div>
+            </div>
+            </div>
+			
+			
+			
+			<div class="card card-5">
+            <div class="testimonial">
+              <div class="text">
+                 <h5>Materials Master</h5>
+                <p class="mt-5">Add details of items, units</p>
+              </div>
+            </div>
+            </div>
+			
+			
+			<div class="card card-5">
+            <div class="testimonial">
+              <div class="text">
+                 <h5>Material Price Master</h5>
+                <p class="mt-5">Add record of materials like price name ,units</p>
+			  </div>
+            </div>
+          </div>
+         </div>
+      </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000,
+           autoplayHoverPause: true,
+		   
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:4,
+               nav: false
+             }
+           }
+         });
+      </script>
+	  
+	  </div>
+
+	<div class="container" style="margin-bottom:20px">
+	<h2 style="text-align:center;" data-animate="fadeInDown">2. Settings</h2>
+	    <div class="wrapper mt-5">
+         <div class="carousel owl-carousel" data-animate="fadeInUp">
+            <div class="card card-1">
+                <div class="testimonial full-height" >
+              <div class="text">
+			  <h5>User Registration</h5>
+                <p>Register user for branches empolyee who can access the software </p>
+              </div>
+          
+            </div>
+            </div>
+            <div class="card card-2">
+               <div class="testimonial full-height">
+              <div class="text">
+			  <h5>Change Password</h5>
+                <p>In case someone forgot password ths software gives options to recovery password or change password</p>
+              </div>
+          
+            </div>
+            </div>
+          
+         </div>
+      </div>
+	  </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: false,
+           autoplay: true,
+           autoplayTimeout: 4000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:2,
+               nav: false
+             }
+           }
+         });
+      </script>
+	  
+          
+	 
+	<div class="container" style="margin-bottom:20px">
+	<h2 style="text-align:center;" data-animate="fadeInDown">3. Transaction</h2>
+	    <div class="wrapper mt-5">
+         <div class="carousel owl-carousel" data-animate="fadeInUp">
+            <div class="card card-1">
+                <div class="testimonial full-height" >
+              <div class="text">
+			  <h5>Goods Receive</h5>
+                <p>Keep records of items, Materials received like name,units, prces etc.</p>
+              </div>
+          
+            </div>
+            </div>
+            <div class="card card-2">
+               <div class="testimonial full-height">
+              <div class="text">
+			   <h5>Consumption Master</h5>
+                <p>Show list of items by searching item name </p>
+              </div>
+          
+            </div>
+            </div>
+          
+         </div>
+      </div>
+	  </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop:false,
+           autoplay: true,
+           autoplayTimeout: 4000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:2,
+               nav: false
+             }
+           }
+         });
+      </script>
+	  
+          
+
+	<div class="container" style="margin-bottom:50px">
+	<h2 style="text-align:center;" data-animate="fadeInDown">4. Reports</h2>
+	    <div class="wrapper mt-5">
+         <div class="carousel owl-carousel" data-animate="fadeInUp">
+            <div class="card card-1">
+                <div class="testimonial full-height" >
+              <div class="text">
+			    <h5>Consumption Reports</h5>
+                <p>Show date vise report of consumption of goods </p>
+              </div>
+          
+            </div>
+            </div>
+			
+			
+            <div class="card card-2">
+               <div class="testimonial full-height">
+              <div class="text">
+			   	  <h5>Billing Report</h5>
+                <p>Show all the report of bill search bill by selectng order type</p>
+              </div>
+            </div>
+            </div>
+            <div class="card card-2">
+               <div class="testimonial full-height">
+              <div class="text">
+			   	 	  <h5>Sales Report</h5>
+                <p>Show all details of sales reports</p>
+              </div>
+            </div>
+            </div>
+			  <div class="card card-2">
+               <div class="testimonial full-height">
+              <div class="text">
+			   	    <h5>Goods Report</h5>
+                <p>Show details of report of good purchased or received</p>
+              </div>
+            </div>
+            </div>
+         </div>
+      </div>
+	  </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop:false,
+           autoplay: true,
+           autoplayTimeout: 3000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:4,
+               nav: false
+             }
+           }
+         });
+      </script>
+	  
+          
+	  </section>	 
+		   
+    
+	
+
+
+	
+	<section id="features" class="features-section bg-gray">
+	<div class="container" >
+ <header class="text-center mb-2">
+        <h2 data-animate="fadeInUp" class="title">Features</h2>
+          
+        </header>
+  <div class="row  " style="font-size:15px;" >
+    <div data-animate="fadeInUp" class="col-sm-3 pt-3 pb-3 mx-1 mb-2" style=" background-color:#f1f1f1f1;">
+	<div class=""style="text-align:center; padding-top:20px">
+	<h3>Resturant</h3>
+  <p class="">True contactless ordering for multi course dining. From table management to digital payments.</p>
+  <button class="btn btn-outline-warning text-warning "><a href="#info" class="text-warning"> Know More >></a></button>
+  <h3 style="padding-top:30px;">Popular features</h3>
+  </div>
+   
+  <div class="pt-3 pl-5">
+      
+  <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Loyalty program</p>
+  <i class="material-icons"style="float:left">check_circle</i><p  style="padding-left:30px">Realtime feedback</p>
+ <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Built-in table management</p>
+  </div>
+  </div>
+
+
+    <div data-animate="fadeInUp" class="col-sm pt-3 pb-3 mx-1 mb-2" style=" background-color:#f1f1f1f1;">
+	<div class=""style="text-align:center; padding-top:20px">
+	<h3>ORS</h3>
+  <p class="">Digitalize end to end, from payments to menu engineering.</p>
+  <button class="knowmoredesk btn btn-outline-warning text-warning "><a href="#info" class="text-warning">Know More >></a></button>
+   
+  <h3 style="padding-top:30px;">Popular features</h3>
+  </div>
+ <div class="pt-3 pl-5">
+  <i class="material-icons"style="float:left;">check_circle</i> <p  style="padding-left:30px">Loyalty Program</p>
+  <i class="material-icons"style="float:left">check_circle</i><p  style="padding-left:30px">Branding</p>
+ <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Digital Payment</p>
+  </div>
+  </div>
+  
+   <div data-animate="fadeInUp"class="col-sm pt-3 pb-3 mx-1 mb-2" style=" background-color:#f1f1f1f1;">
+	<div class=""style="text-align:center; padding-top:20px">
+	<h3>Cloud Kitchen</h3>
+  <p class="">Digitalize your home delivery, cloud kitchen with no dependency on aggregators</p>
+  <button class="knowmoredesk btn btn-outline-warning text-warning "><a href="#info" class="text-warning">Know More >></a></button>
+  <h3 style="padding-top:30px;">Popular features</h3>
+  </div>
+  <div class="pt-3 pl-5">
+  <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Build in CRM</p>
+  <i class="material-icons"style="float:left">check_circle</i><p  style="padding-left:30px">Realtime Menu</p>
+ <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Single Dashboard</p>
+  </div>
+  </div>
+  
+  
+     <div data-animate="fadeInUp" class="col-sm pt-3 pb-3 mx-1 mb-2" style=" background-color:#f1f1f1f1;">
+	<div class=""style="text-align:center; padding-top:20px">
+	<h3>Menu Mangement</h3>
+  <p class="">Get complete control over your menu items and prices, be it for dine-in, take-away or online aggregator portals.</p>
+  <button class="knowmoredesk btn btn-outline-warning text-warning"><a href="#info" class="text-warning"> Know More >></a></button>
+  <h3 style="padding-top:30px;">Popular features</h3>
+  </div>
+  <div class="pt-3 pl-5">
+  <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Menus For Dine-In Delivery</p>
+  <i class="material-icons"style="float:left">check_circle</i><p  style="padding-left:30px">Customizable Menu Timings</p>
+ <i class="material-icons"style="float:left">check_circle</i> <p  style="padding-left:30px">Item Category & Groups</p>
+  </div>
+  </div>
+</div> 
+  </div>
+
+
+    <section id="features" class="features-section bg-dark">
+	<div class="container" >
+ <header class="text-center mb-2">
+        <h2 data-animate="fadeInUp" class="title text-white">Features Of CM Resturant & Bar Software</h2>
+          
+        </header>
+		<div data-animate="fadeInUp" class="row  pt-5 ">
+
+	<div class="col-sm pb-5 text-white">
+   <div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">01</span></div>
+</div>
+<div class="pp text-white">
+  <h3>Billing Management </h3>
+  <p class="text-white">Android Based, Easy to Use, Works Seamlessly in Online and Offline mode. Quick Checkout </p>
+  </div>
+  </div>
+	
+	<div class="col-sm pb-5 text-white">
+	<div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">02</span></div>
+</div>
+<div class="pp text-white">
+  <h3>CRM - Customer Insights </h3>
+  <p class="text-white">Capturing key customer data, Create Marketing Campaigns, Track the usage and Return on Investment</p>
+  </div>
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	<div data-animate="fadeInUp" class="row pt-5 text-white">
+
+	<div class="col-sm pb-5">
+   <div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">03</span></div>
+</div>
+<div class="pp">
+  <h3>Inventory Management </h3>
+  <p class="text-white">Raise Purchase Orders to Vendors from Store, Real time visibility of your inventory</p>
+  </div>
+  </div>
+	
+	<div class="col-sm pb-5">
+	<div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">04</span></div>
+</div>
+<div class="pp">
+  <h3>Purchase Master</h3>
+  <p class="text-white">Manage your inventory at the outlet as well as on online aggregator platforms with ease. </p>
+  </div>
+	</div>
+</div>
+	
+	
+	<div data-animate="fadeInUp" class="row pt-5 text-white">
+
+	<div class="col-sm pb-5">
+  <div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">05</span></div>
+</div>
+<div class="pp">
+  <h3>Online Aggregators </h3>
+  <p class="text-white" >Manage your restaurant menu on Zomato, Swiggy and Dunzo and get orders directly on the PoS. </p>
+  </div>
+	</div>
+	<div class="col-sm pb-5">
+	<div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">06</span></div>
+</div>
+<div class="pp">
+  <h3>Cloud sync desktop software </h3>
+  <p class="text-white">Continue billing even without internet, with data synced up when you’re back online. </p>
+  </div>
+	</div>
+	</div>
+	
+		<div data-animate="fadeInUp" class="row pt-5 text-white">
+
+	<div class="col-sm pb-5">
+  <div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">07</span></div>
+</div>
+<div class="pp ">
+  <h3>Quick Billing </h3>
+  <p  class="text-white">Keep a track of all current orders and allow your customers to pick-up their order by presenting the bill linked.</p>
+  </div>
+	</div>
+	<div class="col-sm pb-5">
+	<div class="res-circle" style="">
+  <div class="circle-txt" style=""><span style="">08</span></div>
+</div>
+<div class="pp">
+  <h3>Admin App and Dashboard </h3>
+  <p class="text-white">Manage and monitor you restaurant from any part of the world. Works on web and as an app on apple and android devices. </p>
+  </div>
+	</div>
+	</div>
+</div>
+
+		</section>
+		
+		
+		
+		
+		
+		    <div style="height:50px"></div>
+	<section id="info" class="info-section">
+  <div class="container">
+	<div class="row" data-animate="fadeInUp" >
+	<div class="col-sm">
+	  <h2> Why Ires Resturant And Bar?</h2>
+  <p style="text-align:justify"><font color="orange">CM resturant & Bar</font> is built to make everyone’s job in the restaurant-business easy. 
+  Desktop billing software with a companion cloud dashboard and app.
+  Take your business to next level with CM Resturant And Bar Software. Software has been built as a feature rich, flexible, and customizable solution. 
+  It handles varied tasks of Restaurants with resounding ease. Continue billing even without internet, with data synced up when you’re back online. </p>
+	</div>
+	<div class="col-sm">
+	<img src="img/a.jpg" style="width:100%"/>
+	</div>
+	      <br/>
+		  <div class="container">
+<p class="mt-5"><font color="orange">A restaurant management system</font> is designed with capabilities and features to help operate and manage your restaurant and bar. 
+ A POS system or POS software is the heart or your bar or restaurant management system and includes many features and functions that make running a business more efficiently and ultimately more profitable. </p>
+<p> <font color="orange">Powerful, flexible and highly configurable software </font>solutions we have a software solution that will solve your challenges.
+From independent POS to all-in-one business management systems, we have a software to fulfill your needs, and offer quick, high-quality service. Make table and guest management easy and pain free, 
+and get more satisfied, loyal customers.</p>
+<p><font color="orange">Sales and taxes </font>Restaurants handle a high amount of credit card and cash transactions.  
+So your restaurant management software should make your life easier as the owner or restaurant manager by tracking all business sales data down.
+With this sales data, you can keep tabs on your all your items sold, which gives you the power to make smart decisions for your business.</p>
+<p><font color="orange">Onlline orders & Delivery</font> Manage your restaurant menu on Zomato, Swiggy and get orders directly on the PoS.
+Get online orders directly into the POS from any food aggregator.Manage delivery on your own with delivery App serving more orders and customers.
+
+</p>
+</div>
+	</div>
+  </div>
+	</section>
+	
+	
+	
+	
+	
+	
+  	<section id="demo" class="demo-section bg-gray">
+	<div class="container" >
+ <header class="text-center mb-2">
+        <h2 data-animate="fadeInUp" class="title">Get Your Demo Software</h2>
+          
+        </header>
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Ask For Free Demo</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Last Name" required />
+              </div>
+            </div>
+          </div>
+            
+              <div class="input_field select_option">
+                <select>
+                  <option>Select a country</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                </select>
+				
+                <div class="select_arrow"></div>
+              </div>
+			  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-map-marker"></i></span>
+            <input type="text" name="city" placeholder="City" required />
+          </div>
+
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb1">
+    			<label for="cb1">I agree with terms and conditions</label>
+            </div>
+           
+          <input class="button" type="submit" value="Get Demo" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <!-- Contact-->
+    <section id="contact" data-animate="bounceIn" class="contact-section contact">
+      <div class="container">
+        <header class="text-center">
+          <h2 class="title">Contact Us</h2>
+		  <h5 style="text-align:center; color:black">  We'd love to hear from you</h5>
+	  <p style="text-align:center ;color:black"> Whether you have a quetions about features,pricing, trials, need a demo or anything else contact us</p>
+        </header>
+        <div class="row mt-5">
+          <div class="col-lg-8 mx-auto">
+            <form id="contact-form" method="post" action="contact.php">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-outline-warning text-warning button5">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+ 
+	<div class="container-fluid">
+<div class="row bg-dark mt-5 " style="text-align:center">
+<div class="col-sm p-5"style="color:white">
+<h2 class="text-warning mb-2">Ires Restaurant & Bar (POS)</h2>
+  <p style=" color:white;text-align:justify;font-size:15px;">A quick, efficient and user-friendly Point-of-Sale
+  (POS) system, is exactly what your restaurant needs.Restaurant automation system with a difference. From automating restaurant operations,
+  minimizing losses and optimizing time and resources.</p>
+</div>
+<div class="col-sm p-5">
+<address class="add"style="text-decoration:none; color:white;text-align:center">
+  <i class="material-icons" >room</i><p class="text-white" style="color:white;text-align:center">B15 Jag Janani Seva Sanstha, Sahakar Nagar, Virar East, Virar, Maharashtra 401305</p><br/>
+  <i class="material-icons">call</i><p class="text-white" style="color:white;text-align:center"><a href="tel:+91"><font color="white"> +91 78875 58376/<br/> +91 75583 44886</font></a></p><br/>
+  <i class="material-icons" >mail_outline</i><p class="text-white"  style="color:white;text-align:center"><a href="mailto:initialwebtech@gmail.com"><font color="white">initialwebtech@gmail.com</font></a></p><br>
+ 
+</address>
+</div>
+<div class="col-sm p-5" style="color:white">
+<h2 class=" text-warning"> Get In Touch</h2>
+<a href="https://www.instagram.com/initial_web_tech/?hl=en">  <i class="fa fa-instagram p-3" style="font-size:24px;color:white"></a></i>
+  <a href=" https://in.linkedin.com/in/initial-web-tech-0"> <i class="fa fa-linkedin-square p-3" style="font-size:24px;color:white"></a></i>
+ <a href="https://www.facebook.com/initialwebtech"> <i class="fa fa-facebook-square p-3" style="font-size:24px;color:white"></a></i>
+    <div class="qlink mt-3" style="color:white;">
+<ul class="navbar-nav ml-auto text-white">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll text-white">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll text-white">About</a></li>
+			  <li class="nav-item"><a href="#contact" class="nav-link link-scroll text-white">Contact</a></li>
+            </ul>
+  </div>
+</div>
+</div>
+
+</div>
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/vendor/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/it-worker/2-1/js/front.js"></script>
+  </body>
+</html>
